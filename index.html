@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ETCH-A-SKETCH!</title>
+</head>
+<main>
+
+
+  <div class="button-container">
+    <a href="#" onclick="reset()" class="myButton">NEW GRID</a>
+    <br>
+    <a href="#" onclick="clearGrid()" class="myButton">CLEAR GRID</a>
+
+
+    <label class="switch">
+      <input type="checkbox" id="accept" />
+      <span class="slider round" pan>
+    </label>
+
+    <label>
+      <input class="switch" onclick="eraseMode()" type="radio" id="accept" name="color" value="black">EraseMode
+    </label>
+    <label>
+      <input class="cb" onclick="colorMe()" type="radio" id="colorBlack" name="color" value="black">Black
+    </label>
+    <label>
+      <input class="cb" onclick="colorMe()" type="radio" id="colorRed" name="color" value="red">Red
+    </label>
+    <label>
+      <input class="cb" onclick="colorMe()" type="radio" id="colorBlue" name="color" value="blue">Blue
+    </label>
+    <label>
+      <input class="cb" onclick="colorMe()" type="radio" id="colorGreen" name="color" value="green">Green
+    </label>
+
+
+  </div>
+
+
+  <div id="container" class="box"></div>
+</main>
+<script src="script.js"></script>
+
+</html>

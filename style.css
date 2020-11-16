@@ -1,0 +1,95 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  background-color: #2c2f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+
+  border: 8px outset #7289da;
+
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.cell {
+  background-color: white;
+  color: white;
+
+  outline: solid lightgray 0.5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.myButton {
+  min-width: 100px;
+  text-align: center;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-right: 10px;
+  background-color: #7289da;
+
+  border: solid #23272a 2px;
+  border-radius: 10px;
+  height: 500px;
+}
+.button-container input,
+label {
+  padding: 2px;
+  align-self: flex-start;
+
+  padding-left: 75px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
